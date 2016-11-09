@@ -5,11 +5,26 @@
 //  - write a function that will fade out all of the html inside the body tag and replace it with a custom goodbye message when you click the button
 //  - finally, write a function that makes you happy :D (as in, have some fun a write something cool, it's up to you!)
 
-(function($){
-	$('.links li a').on('click', function(e) {
-		e.preventDefault()
-		alrt('you clicked a link, good for you');
-	});
 
-	console.log("this is a message for you!!!")
-})(jQery);
+$(function(){
+  
+  $('#secondarySection ol li').each(function(){
+   $(this).text("changed text");
+   $(this).css("background-color",'green');
+  })
+
+  
+});
+
+function func1(){
+  $("html").fadeOut();
+  $("html").text("goodbye");
+}
+ 
+
+
+function happy(){
+
+}
+
+
