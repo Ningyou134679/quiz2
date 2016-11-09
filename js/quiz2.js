@@ -24,7 +24,7 @@ function func1(){
 
 
 function happy(){
-
+  alert("happy");
 }
 
 
